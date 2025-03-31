@@ -11,7 +11,7 @@
     "ffmpeg-static": "^4.4.1",
     "ffprobe-static": "^3.1.0",
     "fluent-ffmpeg": "^2.1.2",
-    "mime-types": "^2.1.35"
+    "mime-types": "^3.0.1"
   },
   "devDependencies": {
     "eslint": "^9.9.1",
