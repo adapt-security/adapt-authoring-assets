@@ -41,6 +41,13 @@
     "description": "Assets are missing",
     "statusCode": 500
   },
+  "PARSE_EXT": {
+    "data": {
+      "file": "File name"
+    },
+    "description": "Failed to parse file extension from the file name",
+    "statusCode": 500
+  },
   "REPO_NOT_FOUND": {
     "data": {
       "name": "Repo name"
