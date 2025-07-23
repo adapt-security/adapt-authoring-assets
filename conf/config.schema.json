@@ -20,7 +20,15 @@
         "type": "string"
       },
       "default": [
+        "application/msword",
         "application/pdf",
+        "application/rtf",
+        "application/vnd.ms-excel",
+        "application/vnd.ms-powerpoint",
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/x-subrip",
         "application/zip",
         "audio/mpeg",
         "audio/wav",
@@ -31,6 +39,7 @@
         "image/png", 
         "image/svg+xml",
         "image/webp",
+        "text/html",
         "text/vtt",
         "video/mp4"
       ]
