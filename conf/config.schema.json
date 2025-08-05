@@ -30,18 +30,21 @@
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "application/x-subrip",
         "application/zip",
+        "audio/mp3",
         "audio/mpeg",
         "audio/wav",
         "font/woff",
         "font/woff2",
-        "image/gif", 
-        "image/jpeg", 
-        "image/png", 
+        "image/gif",
+        "image/jpeg",
+        "image/png",
         "image/svg+xml",
         "image/webp",
         "text/html",
         "text/vtt",
-        "video/mp4"
+        "video/mp4",
+        "video/ogv",
+        "video/webm"
       ]
     },
     "assetMaxFileSize": {
