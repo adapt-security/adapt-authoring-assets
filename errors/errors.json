@@ -1,4 +1,11 @@
 {
+  "ASSET_NO_PATH": {
+    "data": {
+      "title": "Asset title"
+    },
+    "description": "Asset doesn't have a path specified",
+    "statusCode": 500
+  },
   "ASSET_TYPE_EXISTS": {
     "data": {
       "name": "Repo name"
