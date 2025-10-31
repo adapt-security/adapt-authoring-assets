@@ -27,6 +27,24 @@
     "description": "Asset type is not registered",
     "statusCode": 500
   },
+  "FFMPEG": {
+    "data": {
+      "error": "Error message",
+      "command": "The ffmpeg command",
+      "cwd": "The command's current working directory"
+    },
+    "description": "ffmpeg command failed",
+    "statusCode": 500
+  },
+  "FFPROBE": {
+    "data": {
+      "error": "Error message",
+      "command": "The ffprobe command",
+      "cwd": "The command's current working directory"
+    },
+    "description": "ffprobe command failed",
+    "statusCode": 500
+  },
   "GENERATE_THUMB_FAIL": {
     "data": {
       "error": "Error message"
