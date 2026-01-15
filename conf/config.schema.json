@@ -8,6 +8,14 @@
       "isDirectory": true,
       "default": "$DATA/assets"
     },
+    "customFfmpegCommand": {
+      "description": "Custom command to run the ffmpeg CLI",
+      "type": "string"
+    },
+    "customFfprobeCommand": {
+      "description": "Custom command to run the ffprobe CLI",
+      "type": "string"
+    },
     "defaultAssetRepository": {
       "description": "Default repository to use for asset storage",
       "type": "string",
