@@ -22,7 +22,6 @@
       "default": [
         "application/pdf",
         "application/zip",
-        "audio/mp3",
         "audio/mpeg",
         "audio/wav",
         "font/woff",
@@ -34,7 +33,7 @@
         "image/webp",
         "text/vtt",
         "video/mp4",
-        "video/ogv",
+        "video/ogg",
         "video/webm"
       ]
     },
