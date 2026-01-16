@@ -42,14 +42,16 @@
         "audio/wav",
         "font/woff",
         "font/woff2",
-        "image/gif", 
-        "image/jpeg", 
-        "image/png", 
+        "image/gif",
+        "image/jpeg",
+        "image/png",
         "image/svg+xml",
         "image/webp",
         "text/html",
         "text/vtt",
-        "video/mp4"
+        "video/mp4",
+        "video/ogg",
+        "video/webm"
       ]
     },
     "assetMaxFileSize": {
