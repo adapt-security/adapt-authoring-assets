@@ -12,6 +12,8 @@ describe('AbstractAsset', () => {
 
   describe('static name', () => {
     it('should return "local" as the default name', async () => {
+      // AbstractAsset provides a default implementation that returns 'local'
+      // Subclasses can override this static getter
       const { default: AbstractAsset } = await import('../lib/AbstractAsset.js')
       assert.equal(AbstractAsset.name, 'local')
     })
