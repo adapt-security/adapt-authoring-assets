@@ -13,12 +13,16 @@
     "mime": "^4.1.0"
   },
   "peerDependencies": {
-    "adapt-authoring-authored": "^1.1.0",
-    "adapt-authoring-middleware": "^1.0.1",
-    "adapt-authoring-tags": "^1.0.1"
+    "adapt-authoring-authored": "^1.1.1",
+    "adapt-authoring-core": "^1.7.0",
+    "adapt-authoring-middleware": "^1.0.2",
+    "adapt-authoring-tags": "^1.0.2"
   },
   "peerDependenciesMeta": {
     "adapt-authoring-authored": {
+      "optional": true
+    },
+    "adapt-authoring-core": {
       "optional": true
     },
     "adapt-authoring-middleware": {
