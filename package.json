@@ -12,6 +12,22 @@
     "@ffprobe-installer/ffprobe": "^2.1.2",
     "mime": "^4.1.0"
   },
+  "peerDependencies": {
+    "adapt-authoring-authored": "^1.1.0",
+    "adapt-authoring-middleware": "^1.0.1",
+    "adapt-authoring-tags": "^1.0.1"
+  },
+  "peerDependenciesMeta": {
+    "adapt-authoring-authored": {
+      "optional": true
+    },
+    "adapt-authoring-middleware": {
+      "optional": true
+    },
+    "adapt-authoring-tags": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "conventional-changelog-eslint": "^6.0.0",
@@ -34,12 +50,15 @@
       ],
       "@semantic-release/npm",
       "@semantic-release/github",
-      "@semantic-release/git"
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "Chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
     ]
-  },
-  "peerDependencies": {
-    "adapt-authoring-api": "github:adapt-security/adapt-authoring-api",
-    "adapt-authoring-auth": "github:adapt-security/adapt-authoring-auth",
-    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core"
   }
 }
