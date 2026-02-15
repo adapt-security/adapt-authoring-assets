@@ -7,7 +7,8 @@
     "description": {
       "title": "Description",
       "description": "The asset description",
-      "type": "string"
+      "type": "string",
+      "isSearchable": true
     },
     "duration": {
       "description": "The asset file's duration",
@@ -72,7 +73,8 @@
     "title": {
       "title": "Title",
       "description": "The asset title",
-      "type": "string"
+      "type": "string",
+      "isSearchable": true
     },
     "type": {
       "description": "The asset type (audio, video, image etc)",
