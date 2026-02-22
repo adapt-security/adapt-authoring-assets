@@ -22,17 +22,6 @@
     "adapt-authoring-middleware": "^1.0.2",
     "adapt-authoring-tags": "^1.0.2"
   },
-  "peerDependenciesMeta": {
-    "adapt-authoring-authored": {
-      "optional": true
-    },
-    "adapt-authoring-middleware": {
-      "optional": true
-    },
-    "adapt-authoring-tags": {
-      "optional": true
-    }
-  },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "conventional-changelog-eslint": "^6.0.0",
