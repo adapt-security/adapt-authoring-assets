@@ -1,0 +1,17 @@
+{
+  "root": "assets",
+  "routes": [
+    {
+      "route": "/serve/:_id",
+      "handlers": { "get": "serveAssetHandler" },
+      "permissions": { "get": ["read:${scope}"] },
+      "meta": {
+        "get": {
+          "summary": "Retrieve an asset file",
+          "parameters": [{ "name": "thumb", "in": "query", "description": "Whether the thumbnail should be sent", "schema": { "type": "string", "enum": ["true", "false"], "default": "false" } }],
+          "responses": { "200": { "description": "The asset file" } }
+        }
+      }
+    }
+  ]
+}
