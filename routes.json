@@ -4,7 +4,7 @@
     {
       "route": "/serve/:_id",
       "handlers": { "get": "serveAssetHandler" },
-      "permissions": { "get": ["read:{scope}"] }
+      "permissions": { "get": ["read:${scope}"] }
     }
   ]
 }
