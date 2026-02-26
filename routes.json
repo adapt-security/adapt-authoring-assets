@@ -1,0 +1,10 @@
+{
+  "root": "assets",
+  "routes": [
+    {
+      "route": "/serve/:_id",
+      "handlers": { "get": "serveAssetHandler" },
+      "permissions": { "get": ["read:{scope}"] }
+    }
+  ]
+}
