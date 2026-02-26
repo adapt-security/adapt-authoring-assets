@@ -13,7 +13,7 @@
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.1.2",
-    "adapt-authoring-api": "^2.0.0",
+    "adapt-authoring-api": "^3.0.0",
     "adapt-authoring-core": "^2.0.0",
     "mime": "^4.1.0"
   },
