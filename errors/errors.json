@@ -1,4 +1,12 @@
 {
+  "DUPLICATE_ASSET": {
+    "data": {
+      "hash": "The file hash",
+      "assetId": "The ID of the existing asset"
+    },
+    "description": "An asset with identical file content already exists",
+    "statusCode": 409
+  },
   "ASSET_NO_PATH": {
     "data": {
       "title": "Asset title"
