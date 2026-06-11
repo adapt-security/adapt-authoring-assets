@@ -15,6 +15,7 @@
     "@ffprobe-installer/ffprobe": "^2.1.2",
     "adapt-authoring-api": "^3.0.0",
     "adapt-authoring-core": "^3.0.0",
+    "adapt-authoring-mongodb": "^3.1.0",
     "mime": "^4.1.0"
   },
   "peerDependencies": {
