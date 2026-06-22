@@ -54,7 +54,7 @@
         "video/webm"
       ]
     },
-    "assetMaxFileSize": {
+    "maxFileSize": {
       "description": "Maximum asset file upload size",
       "type": "string",
       "isBytes": true,
