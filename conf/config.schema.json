@@ -55,12 +55,26 @@
       ]
     },
     "maxFileSize": {
-      "description": "Maximum asset file upload size",
+      "description": "Maximum asset file upload size; the fallback for any MIME category without a maxFileSizeByType entry",
       "type": "string",
       "isBytes": true,
       "isMutable": true,
       "isPublic": true,
       "default": "50mb"
+    },
+    "maxFileSizeByType": {
+      "description": "Per-MIME-category upload size limits, keyed by top-level MIME category (image, audio, video, application, font, text). Overrides maxFileSize for matching categories; other types fall back to maxFileSize.",
+      "type": "object",
+      "isMutable": true,
+      "isPublic": true,
+      "default": {
+        "image": "10mb",
+        "audio": "50mb",
+        "video": "250mb",
+        "application": "50mb",
+        "font": "2mb",
+        "text": "2mb"
+      }
     },
     "thumbnailDir": {
       "description": "Location of local thumbs dir",
