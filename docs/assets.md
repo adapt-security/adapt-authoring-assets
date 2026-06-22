@@ -47,7 +47,7 @@ Uploads ride on the normal create/update requests. The `onRequest` hook (tapped 
 - `middleware.fileUploadParser(fileTypes, opts)` — multipart file upload
 - `middleware.urlUploadParser(fileTypes, opts)` — fetch an asset from a remote URL
 
-Both are passed `expectedFileTypes` (the MIME allow-list) and `maxFileSize`. A parsed file lands on `req.fileUpload.files.file[0]` and is merged into `req.apiData.data.file`. A comma-separated `tags` string in the body is split into an array.
+Both are passed `expectedFileTypes` (the MIME allow-list) and the size limits — `maxFileSize` plus the optional per-MIME-category `maxFileSizeByType` (enforced by the middleware parser against each file's validated type). A parsed file lands on `req.fileUpload.files.file[0]` and is merged into `req.apiData.data.file`. A comma-separated `tags` string in the body is split into an array.
 
 On `insert`:
 1. `checkDuplicate(filepath, size)` — cheap size pre-check, then SHA-256 hash compare; throws `DUPLICATE_ASSET` (409) if an identical file already exists.
@@ -129,7 +129,8 @@ From `conf/config.schema.json`:
 | `assetDir` | `$DATA/assets` | local storage root |
 | `defaultAssetRepository` | `local` | repository for new assets |
 | `expectedFileTypes` | (see above) | upload MIME allow-list |
-| `maxFileSize` | `50mb` | max upload size (mutable, public) |
+| `maxFileSize` | `50mb` | global upload-size fallback (mutable, public) |
+| `maxFileSizeByType` | image 10mb · audio 50mb · video 250mb · application 50mb · font 2mb · text 2mb | per-MIME-category size limits; a category with no entry falls back to `maxFileSize` |
 | `thumbnailDir` | `$TEMP/asset-thumbs` | thumbnail storage |
 | `thumbnailExt` | `.png` | thumbnail file extension |
 | `thumbnailWidth` | `320` | thumbnail max width (px) |
