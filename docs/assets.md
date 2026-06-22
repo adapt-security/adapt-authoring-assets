@@ -129,7 +129,7 @@ From `conf/config.schema.json`:
 | `assetDir` | `$DATA/assets` | local storage root |
 | `defaultAssetRepository` | `local` | repository for new assets |
 | `expectedFileTypes` | (see above) | upload MIME allow-list |
-| `assetMaxFileSize` | `50mb` | max upload size (mutable, public) |
+| `maxFileSize` | `50mb` | max upload size (mutable, public) |
 | `thumbnailDir` | `$TEMP/asset-thumbs` | thumbnail storage |
 | `thumbnailExt` | `.png` | thumbnail file extension |
 | `thumbnailWidth` | `320` | thumbnail max width (px) |
