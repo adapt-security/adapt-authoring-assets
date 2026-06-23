@@ -100,5 +100,5 @@
       "format": "uri"
     }
   },
-  "required": ["title", "description"]
+  "required": ["title"]
 }
