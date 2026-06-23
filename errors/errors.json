@@ -74,6 +74,10 @@
     "description": "Assets are missing",
     "statusCode": 500
   },
+  "MISSING_FILE": {
+    "description": "No file was provided for the asset",
+    "statusCode": 400
+  },
   "PARSE_EXT": {
     "data": {
       "file": "File name"
