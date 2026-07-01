@@ -37,6 +37,12 @@
         "showInUi": false
       }
     },
+    "isPlaceholder": {
+      "title": "Placeholder asset",
+      "description": "Marks this asset as a stand-in for external content-creation services",
+      "type": "boolean",
+      "default": false
+    },
     "path": {
       "description": "The relative path to the stored asset",
       "type": "string",
